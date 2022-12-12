@@ -1,2 +1,2 @@
-# Skalar_webpage
+# skalar_webpage
 First commercial project for "Skalar geodezja"
