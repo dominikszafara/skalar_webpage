@@ -11,6 +11,7 @@ div,
 a {
     margin: 0;
     padding: 0;
+    font-family: 'Unbounded', cursive;
 }
 
 a {
@@ -18,8 +19,8 @@ a {
 }
 
 .bck-img {
-    background-image: linear-gradient(rgb(107, 83, 4, 0.6) 100%,
-            rgba(107, 83, 4, 0.6) 100%),
+    background-image: linear-gradient(rgb(237, 197, 21, 0.6) 100%,
+            rgb(237, 197, 21, 0.6) 100%),
         url("../pictures/background.jpg");
 
     background-color: rgb(34, 34, 34);
@@ -44,13 +45,13 @@ a {
 
 .nav>a {
     margin-right: 40px;
-    color: white;
+    color: rgb(34, 34, 34);
     transition: all 150ms ease-in-out;
 }
 
 .nav>a:last-child {
     margin-right: 0px;
-    color: white;
+    color: rgb(34, 34, 34);
 }
 
 .nav>a:hover {
@@ -113,11 +114,16 @@ a {
     align-items: center;
     justify-content: center;
     gap: 45px;
-    background-color: #2d2d2d;
+    backdrop-filter: blur(6px);
+    /*background-color: #2d2d2d;*/
 }
 
 .mob-list__item {
-    color: white;
+    color: rgb(34, 34, 34);
+}
+
+.mob-list__item:hover {
+    color: rgb(179, 179, 179);
 }
 
 .mob-list__item:first-child {
