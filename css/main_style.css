@@ -81,3 +81,43 @@ a {
 }
 
 /*mob version*/
+.mob-open,
+.mob-close {
+    width: 30px;
+    height: 30px;
+}
+
+.mob-open {
+    position: fixed;
+    right: 30px;
+    top: 15px;
+}
+
+.mob-list {
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    background-color: #2d2d2d;
+}
+
+.mob-list__item {
+    color: white;
+}
+
+.mob-list__item:first-child {
+    margin-bottom: 40px;
+}
+
+.mob-close {
+    position: fixed;
+    right: 30px;
+    top: 15px;
+    z-index: 5;
+}
