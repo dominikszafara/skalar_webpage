@@ -58,8 +58,17 @@ a {
 }
 
 .logo {
+    /*background-image: url("../pictures/logo_wektor.png");
+    background-size: cover;
+    background-position: center;*/
     color: white;
     transition: all 150ms ease-in-out;
+
+}
+
+.logo-para {
+    height: 50%;
+    width: 50%;
 }
 
 .logo:hover {
@@ -71,7 +80,7 @@ a {
     height: 80px;
 }
 
-@media screen and(max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     .header,
     .header-background {
@@ -120,4 +129,43 @@ a {
     right: 30px;
     top: 15px;
     z-index: 5;
+}
+
+@media screen and (min-width: 768px) {
+    .mob-menu {
+        display: none;
+    }
+
+}
+
+/*js*/
+
+.opened {
+    opacity: 1;
+    animation: openAnim 200ms ease-in-out;
+}
+
+.close {
+    opacity: 0;
+    animation: closeAnim 200ms ease-in-out;
+}
+
+@keyframes openAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes closeAnim {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
