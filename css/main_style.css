@@ -18,16 +18,15 @@ a {
 }
 
 .bck-img {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.6) 100%,
-            rgb(0, 0, 0, 0.6) 100%,
-        ),
+    background-image: linear-gradient(rgb(107, 83, 4, 0.6) 100%,
+            rgba(107, 83, 4, 0.6) 100%),
         url("../pictures/background.jpg");
 
     background-color: rgb(34, 34, 34);
     background-size: cover;
     background-position: center;
     max-width: 2560px;
-    height: 800px;
+    height: 1920px;
     margin: 0 auto;
-    */
+
 }
