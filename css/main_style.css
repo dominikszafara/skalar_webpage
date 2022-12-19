@@ -26,7 +26,58 @@ a {
     background-size: cover;
     background-position: center;
     max-width: 2560px;
-    height: 1920px;
+    height: 1900px;
     margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.nav>a {
+    margin-right: 40px;
+    color: white;
+    transition: all 150ms ease-in-out;
+}
+
+.nav>a:last-child {
+    margin-right: 0px;
+    color: white;
+}
+
+.nav>a:hover {
+    color: rgb(179, 179, 179);
+}
+
+.logo {
+    color: white;
+    transition: all 150ms ease-in-out;
+}
+
+.logo:hover {
+    color: rgb(179, 179, 179);
+}
+
+.header-background {
+    backdrop-filter: blur(6px);
+    height: 80px;
+}
+
+@media screen and(max-width: 767px) {
+
+    .header,
+    .header-background {
+        display: none;
+    }
 
 }
+
+/*mob version*/
