@@ -37,7 +37,7 @@ a {
     background-position: center;
     width: 300px;
     height: 100px;
-    margin: 0 auto;
+
 }
 
 .container {
@@ -47,24 +47,24 @@ a {
 }
 
 .header {
-
-    display: flex;
-    justify-content: space-between;
     padding: 30px 30px 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+
 }
 
-.nav>a {
-    margin-right: 40px;
+.navbox>a {
+    padding: 20px;
+    text-decoration: none;
     color: rgb(34, 34, 34);
     transition: all 150ms ease-in-out;
 }
 
-.nav>a:last-child {
-    margin-right: 0px;
-    color: rgb(34, 34, 34);
-}
-
-.nav>a:hover {
+.navbox>a:hover {
     color: rgb(179, 179, 179);
 }
 
@@ -77,9 +77,9 @@ a {
 
 }
 
-.logo-para {
-    height: 50%;
-    width: 50%;
+.logo-mobile {
+
+    width: 150px;
 }
 
 .logo:hover {
@@ -88,7 +88,7 @@ a {
 
 .header-background {
     backdrop-filter: blur(6px);
-    height: 80px;
+    height: 160px;
 }
 
 @media screen and (max-width: 767px) {
