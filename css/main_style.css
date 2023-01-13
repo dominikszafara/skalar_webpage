@@ -11,6 +11,7 @@ div,
 a {
     margin: 0;
     padding: 0;
+    font-family: 'Unbounded', cursive;
 }
 
 a {
@@ -18,8 +19,8 @@ a {
 }
 
 .bck-img {
-    background-image: linear-gradient(rgb(107, 83, 4, 0.6) 100%,
-            rgba(107, 83, 4, 0.6) 100%),
+    background-image: linear-gradient(rgb(237, 197, 21, 0.6) 100%,
+            rgb(237, 197, 21, 0.6) 100%),
         url("../pictures/background.jpg");
 
     background-color: rgb(34, 34, 34);
@@ -30,6 +31,15 @@ a {
     margin: 0 auto;
 }
 
+.logo-wrapper {
+    background-image: url("../pictures/logo_wektor.png");
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 100px;
+
+}
+
 .container {
     width: 80%;
     max-width: 1440px;
@@ -37,23 +47,21 @@ a {
 }
 
 .header {
+    padding: 30px 30px 0px 30px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 0px 30px 30px 30px;
+    padding: 30px;
 }
 
-.nav>a {
-    margin-right: 40px;
-    color: white;
+.navbox>a {
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
     transition: all 150ms ease-in-out;
 }
 
-.nav>a:last-child {
-    margin-right: 0px;
-    color: white;
-}
-
-.nav>a:hover {
+.navbox>a:hover {
     color: rgb(179, 179, 179);
 }
 
@@ -66,9 +74,9 @@ a {
 
 }
 
-.logo-para {
-    height: 50%;
-    width: 50%;
+.logo-mobile {
+
+    width: 150px;
 }
 
 .logo:hover {
@@ -77,7 +85,7 @@ a {
 
 .header-background {
     backdrop-filter: blur(6px);
-    height: 80px;
+    height: 160px;
 }
 
 @media screen and (max-width: 767px) {
@@ -113,11 +121,16 @@ a {
     align-items: center;
     justify-content: center;
     gap: 45px;
-    background-color: #2d2d2d;
+    backdrop-filter: blur(6px);
+    /*background-color: #2d2d2d;*/
 }
 
 .mob-list__item {
-    color: white;
+    color: rgb(34, 34, 34);
+}
+
+.mob-list__item:hover {
+    color: rgb(179, 179, 179);
 }
 
 .mob-list__item:first-child {
