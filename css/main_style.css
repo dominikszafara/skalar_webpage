@@ -39,7 +39,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
 }
 
 .nav>a {
